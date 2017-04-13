@@ -23,7 +23,7 @@ try {
 	    $v['fields'] = $result->fetch_all(MYSQLI_ASSOC);
 	}
 
-	$word = new \WordAdapters();
+	$word = new \WordAdapter();
 	$word->exportWord($status, $name);
 } catch (Exception $e) {
 	die('Error:' . $e->getMessage());
