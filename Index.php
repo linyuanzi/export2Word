@@ -29,4 +29,4 @@ try {
 	die('Error:' . $e->getMessage());
 }
 
-return;
+return 1;
